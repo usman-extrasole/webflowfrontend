@@ -1,0 +1,816 @@
+<!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
+<!--  Last Published: Tue Dec 13 2022 16:24:42 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="638f64323f8eac726f44778e" data-wf-site="62b394ecfebdb572bde3bec3">
+<head>
+  <meta charset="utf-8">
+  <title>Project Overview</title>
+  <meta content="Project Overview" property="og:title">
+  <meta content="Project Overview" property="twitter:title">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="../css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="../css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="../css/stellant.webflow.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <script type="text/javascript">WebFont.load({  google: {    families: ["PT Sans:400,400italic,700,700italic","DM Sans:regular,italic,500,500italic,700,700italic","Roboto:300,regular,500,700,900"]  }});</script>
+  <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="../images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="../images/webclip.png" rel="apple-touch-icon"><!--  Finsweet Cookie Consent  -->
+  <script async="" src="https://cdn.jsdelivr.net/npm/@finsweet/cookie-consent@1/fs-cc.js" fs-cc-mode="opt-in"></script>
+  <!--  jquery libr  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ajaxy/1.6.1/scripts/jquery.ajaxy.js" integrity="sha512-4WpSQe8XU6Djt8IPJMGD9Xx9KuYsVCEeitZfMhPi8xdYlVA5hzRitm0Nt1g2AZFS136s29Nq4E4NVvouVAVrBw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <style>
+.w-nav-overlay {
+overflow: inherit;
+}
+.milestone-div:hover .the-bar {
+	background: #314AA4 !important;
+}
+@keyframes growProgressBar {
+  0%, 33% { --pgPercentage: 0; }
+  100% { --pgPercentage: var(--value); }
+}
+@property --pgPercentage {
+  syntax: '<number>';
+  inherits: false;
+  initial-value: 0;
+}
+div[role="progressbar"] {
+  --size: 13rem;
+  --fg: #314AA4;
+  --bg: #F4F4F4;
+  --pgPercentage: var(--value);
+  animation: growProgressBar 2s 1 forwards;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: 
+    radial-gradient(closest-side, white 85%, transparent 0 99.9%, white 0),
+    conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0)
+    ;
+  font-family: 'Sofia Pro', sans-serif;
+  font-size: 35px;
+  color: #314AA4;
+  margin: 0 0;
+  margin-top: 20px;
+}
+div[role="progressbar"]::before {
+  counter-reset: percentage var(--value);
+  content: counter(percentage) '%';
+  background: #F8F8F8;
+  width: 117px;
+  height: 117px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.doted-circle {
+	background-image: url('https://uploads-ssl.webflow.com/62b394ecfebdb572bde3bec3/6373a581fce3c574b3077d21_progress-bar.png');
+  background-size: 150px;
+  background-repeat: no-repeat;
+  height: 150px;
+  width: 150px;
+  position: absolute;
+}
+</style>
+</head>
+<body class="tab-body">
+  <div class="main-section">
+    <div class="man-two-set">
+      <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease-in" data-easing2="ease-out" role="banner" class="p-navbar w-nav">
+        <a href="#" class="p-nav-brand w-nav-brand"><img src="../images/u-logo.svg" loading="lazy" width="61" alt="" class="image-48">
+          <p class="p-caption mobile-nav-text">Dark</p>
+        </a>
+        <div class="company-name"><img src="../images/Mask-group.png" loading="lazy" alt="">
+          <div class="icon-a">A</div>
+          <h4 class="com-text">Core City</h4>
+        </div>
+        <nav role="navigation" class="i-nav-menu w-nav-menu">
+          <!-- <div data-hover="false" data-delay="0" data-w-id="b729edc8-8086-7dc2-cb4c-e554084c80f4" class="dropdown-2 w-dropdown">
+            <div class="dropdown-toggle-2 w-dropdown-toggle">
+              <div data-w-id="b729edc8-8086-7dc2-cb4c-e554084c80f6" class="costom-icon w-icon-dropdown-toggle"></div>
+              <div class="text-block-12">Project Status</div>
+            </div>
+            <nav class="dropdown-list-2 w-dropdown-list">
+              <a href="#" class="dropdown-link-3 w-dropdown-link">Project A</a>
+              <a href="#" class="dropdown-link-3 w-dropdown-link">Project B</a>
+              <a href="#" class="dropdown-link-3 w-dropdown-link">Project C</a>
+            </nav>
+          </div> -->
+        <div class="sidenav">
+          <button class="dropdown-btn dash-drop">Project Status 
+            <i class='fas fa fa-angle-down'></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="project-over-view.html" class="icon-sarcle">Project A</a>
+            <a href="project-over-view.html" class="icon-sarcle">Project B</a>
+            <a href="project-over-view.html" class="icon-sarcle">Project C</a>
+          </div>
+        </div>
+          <a href="#" class="i-box w-button">Documentation</a>
+          <a href="file-manger.html" class="i-box-2 w-button">Messages</a>
+          <a href="new-request.html" class="i-box-4 w-button">New Request</a>
+          <div class="hr"></div>
+          <a href="../user-account.html" class="s-box w-button">Settings</a>
+          <button class="s-box-2 log-box-3" data-wf-user-logout="Log out" data-wf-user-login="Sign Out" type="button">Log out</button>
+          <div class="logo-boots">
+            <a href="#" class="w-inline-block"><img src="../images/log-stal.png" loading="lazy" alt=""></a>
+          </div>
+        </nav>
+        <div class="logo-bootes">
+          <a href="#" class="link-block-6 w-inline-block"><img src="../images/NORTHSTAR.png" loading="lazy" alt="" class="image-316">
+            <div class="text-block-13">By Stellant</div>
+          </a>
+        </div>
+        <div class="p-menu-button w-nav-button">
+          <div class="icon-5 w-icon-nav-menu"></div>
+        </div>
+      </div>
+      <div class="two-sets">
+        <div class="under-set">
+          <div class="over-section">
+            <div class="track-project">
+              <div class="pro-div">
+                <div class="pro-text">Name of Project</div>
+                <div class="track-div">
+                  <div class="track-iner-div"><img loading="lazy" src="../images/Ellipse-25.png" alt="">
+                    <div class="top-txt">On Track</div>
+                  </div>
+                  <div class="track-iner-div"><img loading="lazy" src="../images/Ellipse-26.png" alt="">
+                    <div class="top-txt">On Track</div>
+                  </div>
+                  <div class="track-iner-div"><img loading="lazy" src="../images/Ellipse-27.png" alt="">
+                    <div class="top-txt">On Track</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-pro">
+                <div class="date-div">
+                  <div class="date-txt-head">Start Date</div>
+                  <h1 class="date-txt">November 11, 2022</h1>
+                  <div class="date-txt-head">Estimated completion</div>
+                  <h1 class="date-txt">November 19, 2022</h1>
+                  <div class="date-txt-head">Days in progress</div>
+                  <h1 class="date-txt">7 Days</h1>
+                </div>
+                <div class="overall">
+                  <div class="_16-prp">
+                    <div class="main-progress-bar w-embed">
+                      <div role="progressbar" aria-valuenow="16" aria-valuemin="0" aria-valuemax="100" style="--value:65">
+                        <div class="doted-circle"></div>
+                      </div>
+                    </div>
+                    <div class="text-block-2">All Completed Tasks</div>
+                    <a href="#" class="button-3 w-button">Milestone A</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="faq-section">
+              <div class="faq-div">
+                <div class="_2-4-grid vertical-mobile">
+                  <div id="w-node-e129f7ab-8031-0a83-c9f7-c74d078a3549-6f44778e" class="div-block-7">
+                    <div class="accordion-wrap">
+                      <div class="faq-item">
+                        <a href="#" class="faq-question w-inline-block">
+                          <div>Project Updates</div>
+                          <div class="circle-div">
+                            <div class="p-m-wrap">
+                              <div class="minus"></div>
+                              <div class="plus"></div>
+                            </div>
+                          </div>
+                        </a>
+                        <div class="faq-answer for-width">
+                          <div class="update-set">
+                            <a href="#" class="link-block-5 w-inline-block">
+                              <div class="updates-div">
+                                <div class="div-01">
+                                  <div class="txt-04">Date</div>
+                                </div>
+                                <div class="div-02">
+                                  <p class="para-05">Short description of update and task.Short description of update and task.</p>
+                                </div>
+                                <div class="div-03">
+                                  <div class="track-iner-div"><img loading="lazy" src="../images/Ellipse-25.png" alt="">
+                                    <div class="top-txt">On Track</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+                            <a href="#" class="link-block-5 w-inline-block">
+                              <div class="updates-div">
+                                <div class="div-01">
+                                  <div class="txt-04">Date</div>
+                                </div>
+                                <div class="div-02">
+                                  <p class="para-05">Short description of update and task.Short description of update and task.</p>
+                                </div>
+                                <div class="div-03">
+                                  <div class="track-iner-div"><img loading="lazy" src="../images/Ellipse-26.png" alt="">
+                                    <div class="top-txt">On Track</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+                            <a href="#" class="link-block-5 w-inline-block">
+                              <div class="updates-div">
+                                <div class="div-01">
+                                  <div class="txt-04">Date</div>
+                                </div>
+                                <div class="div-02">
+                                  <p class="para-05">Short description of update and task.Short description of update and task.</p>
+                                </div>
+                                <div class="div-03">
+                                  <div class="track-iner-div"><img loading="lazy" src="../images/Ellipse-27.png" alt="">
+                                    <div class="top-txt">On Track</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+                            <a href="#" class="link-block-5 w-inline-block">
+                              <div class="updates-div">
+                                <div class="div-01">
+                                  <div class="txt-04">Date</div>
+                                </div>
+                                <div class="div-02">
+                                  <p class="para-05">Short description of update and task.Short description of update and task.</p>
+                                </div>
+                                <div class="div-03">
+                                  <div class="track-iner-div"><img loading="lazy" src="../images/Ellipse-26.png" alt="">
+                                    <div class="top-txt">On Track</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+                            <a href="#" class="link-block-5 w-inline-block">
+                              <div class="updates-div">
+                                <div class="div-01">
+                                  <div class="txt-04">Date</div>
+                                </div>
+                                <div class="div-02">
+                                  <p class="para-05">Short description of update and task.Short description of update and task.</p>
+                                </div>
+                                <div class="div-03">
+                                  <div class="track-iner-div"><img loading="lazy" src="../images/Ellipse-26.png" alt="">
+                                    <div class="top-txt">On Track</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+                            <a href="#" class="link-block-5 w-inline-block">
+                              <div class="updates-div">
+                                <div class="div-01">
+                                  <div class="txt-04">Date</div>
+                                </div>
+                                <div class="div-02">
+                                  <p class="para-05">Short description of update and task.Short description of update and task.</p>
+                                </div>
+                                <div class="div-03">
+                                  <div class="track-iner-div"><img loading="lazy" src="../images/Ellipse-26.png" alt="">
+                                    <div class="top-txt">On Track</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+                            <a href="#" class="link-block-5 w-inline-block">
+                              <div class="updates-div">
+                                <div class="div-01">
+                                  <div class="txt-04">Date</div>
+                                </div>
+                                <div class="div-02">
+                                  <p class="para-05">Short description of update and task.Short description of update and task.</p>
+                                </div>
+                                <div class="div-03">
+                                  <div class="track-iner-div"><img loading="lazy" src="../images/Ellipse-26.png" alt="">
+                                    <div class="top-txt">On Track</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+                            <a href="#" class="link-block-5 w-inline-block">
+                              <div class="updates-div">
+                                <div class="div-01">
+                                  <div class="txt-04">Date</div>
+                                </div>
+                                <div class="div-02">
+                                  <p class="para-05">Short description of update and task.Short description of update and task.</p>
+                                </div>
+                                <div class="div-03">
+                                  <div class="track-iner-div"><img loading="lazy" src="../images/Ellipse-26.png" alt="">
+                                    <div class="top-txt">On Track</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="w-node-e129f7ab-8031-0a83-c9f7-c74d078a353b-6f44778e" class="div-block-6">
+                    <div class="accordion-wrap">
+                      <div class="faq-item">
+                        <a href="#" class="faq-question w-inline-block">
+                          <div>Overview</div>
+                          <div class="circle-div">
+                            <div class="p-m-wrap">
+                              <div class="minus"></div>
+                              <div class="plus"></div>
+                            </div>
+                          </div>
+                        </a>
+                        <div class="faq-answer">
+                          <div class="overview">
+                            <div data-w-id="17e8696d-9976-8ea1-13eb-b7e84ab7ec45" class="milestone-div">
+                              <div class="present-div">
+                                <div class="m-text">Milestone A</div>
+                                <div class="percentage-div">
+                                  <div class="persen-text">8%</div>
+                                  <div class="comp-text">Completed</div>
+                                </div>
+                              </div>
+                              <div class="progress-div-block">
+                                <div style="background-color:rgba(NaN,NaN,NaN,undefined)" class="progress-percent w-embed">
+                                  <div class="the-bar" style="width: 8%; background: #314AA4; height: 100%; border-radius: 5px;"></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div data-w-id="469d9ec4-3d57-6356-e3e3-930c63c48956" class="milestone-div">
+                              <div class="present-div">
+                                <div class="m-text">Milestone A</div>
+                                <div class="percentage-div">
+                                  <div class="persen-text">55%</div>
+                                  <div class="comp-text">Completed</div>
+                                </div>
+                              </div>
+                              <div class="progress-div-block">
+                                <div style="background-color:rgba(NaN,NaN,NaN,undefined)" class="progress-percent w-embed">
+                                  <div class="the-bar" style="width: 55%; background: #314AA4; height: 100%; border-radius: 5px;"></div>
+                                </div>
+                              </div>
+                              
+                            </div>
+                            <div data-w-id="b4cfd1a5-bba1-e761-ef2f-3ca241607087" class="milestone-div">
+                              <div class="present-div">
+                                <div class="m-text">Milestone A</div>
+                                <div class="percentage-div">
+                                  <div class="persen-text">25%</div>
+                                  <div class="comp-text">Completed</div>
+                                </div>
+                              </div>
+                              <div class="progress-div-block">
+                                <div style="background-color:rgba(NaN,NaN,NaN,undefined)" class="progress-percent w-embed">
+                                  <div class="the-bar" style="width: 25%; background: #314AA4; height: 100%; border-radius: 5px;"></div>
+                                </div>
+                              </div>
+                              
+                            </div>
+                            <div data-w-id="e45ca91d-8b22-980f-cca3-d64e4b469fd8" class="milestone-div">
+                              <div class="present-div">
+                                <div class="m-text">Milestone A</div>
+                                <div class="percentage-div">
+                                  <div class="persen-text">5%</div>
+                                  <div class="comp-text">Completed</div>
+                                </div>
+                              </div>
+                              <div class="progress-div-block">
+                                <div style="background-color:rgba(NaN,NaN,NaN,undefined)" class="progress-percent w-embed">
+                                  <div class="the-bar" style="width: 5%; background: #314AA4; height: 100%; border-radius: 5px;"></div>
+                                </div>
+                              </div>
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="w-node-e129f7ab-8031-0a83-c9f7-c74d078a352d-6f44778e" class="div-block-5">
+                    <div class="accordion-wrap">
+                      <div class="faq-item">
+                        <a href="#" class="faq-question w-inline-block">
+                          <div>My Team</div>
+                          <div class="circle-div">
+                            <div class="p-m-wrap">
+                              <div class="minus"></div>
+                              <div class="plus"></div>
+                            </div>
+                          </div>
+                        </a>
+                        <div class="faq-answer">
+                          <div class="team-tracker">
+                            <div class="tracker-scroll">
+                              <div class="info-wrap">
+                                <div class="table-title">First Name</div>
+                                <div class="hg-in one-type"><img loading="lazy" src="../images/AM-3.png" alt="" class="fare-img">
+                                  <div class="info-title">Name</div>
+                                </div>
+                                <div class="hg-in one-type"><img loading="lazy" src="../images/AM-3.png" alt="" class="fare-img">
+                                  <div class="info-title">Name</div>
+                                </div>
+                                <div class="hg-in one-type"><img loading="lazy" src="../images/AM-3.png" alt="" class="fare-img">
+                                  <div class="info-title">Name</div>
+                                </div>
+                              </div>
+                              <div class="info-wrap">
+                                <div class="table-title">Last Name</div>
+                                <div class="info-title one-type set-types">Last Name</div>
+                                <div class="info-title one-type set-types">Last Name</div>
+                                <div class="info-title one-type set-types">Last Name</div>
+                              </div>
+                              <div class="info-wrap">
+                                <div class="table-title">Joined On</div>
+                                <div class="info-title one-type set-types">27/09/2022</div>
+                                <div class="info-title one-type set-types">27/09/2022</div>
+                                <div class="info-title one-type set-types">27/09/2022</div>
+                              </div>
+                              <div class="info-wrap">
+                                <div class="table-title">Title</div>
+                                <div class="info-title-2 one-type"><p class="set-types-111">This is a long title, Very long title</p></div>
+                                <div class="info-title-2 one-type"><p class="set-types-111">This is a long title, Very long title</p></div>
+                                <div class="info-title-2 one-type"><p class="set-types-111">This is a long title, Very long title</p></div>
+                              </div>
+                              <div class="info-wrap">
+                                <div class="table-title">Task on time Rate</div>
+                                <div class="rate-div one-type set-types-two">
+                                  <a href="#" class="anker-feed"><div class="info-title-911">80%</div></a>
+                                  <a href="#" class="feed-link">View Profile</a>
+                                </div>
+                                <div class="rate-div one-type set-types-two">
+                                  <a href="#" class="anker-feed"><div class="info-title-911">80%</div></a>
+                                  <a href="#" class="feed-link">View Profile</a>
+                                </div>
+                                <div class="rate-div one-type set-types-two">
+                                  <a href="#" class="anker-feed"><div class="info-title-911">80%</div></a>
+                                  <a href="#" class="feed-link">View Profile</a>
+                                </div>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sidebar-div">
+            <div class="side-bar">
+              <div class="rafer">
+                <div class="rafer-main again-rafer">Stellant Client Success Manager</div>
+                <div class="hr-2"></div>
+                <div class="set-div">
+                  <div class="am-div">
+                    <div class="cir-text">AM</div>
+                    <div class="am-div-two">
+                      <div class="fullname">Full Name</div>
+                      <div class="acount">Position</div>
+                      <div class="acount">email@stellant.co</div>
+                    </div>
+                  </div>
+                  <div class="m-image"><img loading="lazy" src="../images/Group-237.png" alt=""></div>
+                </div>
+              </div>
+            </div>
+            <div class="brief-div">
+              <div class="brief-under-div">
+                <div class="brief-txt">Project Brief</div>
+                <p class="brief-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+              <div class="hr-2"></div>
+              <div class="brief-under-div">
+                <div class="brief-txt">Project Brief</div>
+                <p class="brief-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+              <div class="hr-2"></div>
+              <div class="brief-under-div">
+                <div class="brief-txt">Project Brief</div>
+                <p class="brief-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div fs-cmstabs-element="tabs" data-current="Tab 1" data-easing="ease" data-duration-in="300" data-duration-out="100" class="w-tabs">
+          <div class="project-btns w-tab-menu">
+            <a data-w-tab="Tab 1" class="p-btn w-inline-block w-tab-link w--current">
+              <div>Project A</div>
+            </a>
+            <a data-w-tab="Tab 2" class="p-btn w-inline-block w-tab-link">
+              <div>Project B</div>
+            </a>
+          </div>
+          <div class="tab-component w-tab-content">
+            <div data-w-tab="Tab 1" class="w-tab-pane w--tab-active">
+              <div fs-cmstabs-resetix="true" fs-cmstabs-element="tab-link" class="tab-name">This is some text inside of a div block.</div>
+            </div>
+            <div data-w-tab="Tab 2" class="w-tab-pane">
+              <div class="under-set">
+                <div class="over-section">
+                  <div class="pro-div">
+                    <div class="pro-text">Project Overview</div>
+                  </div>
+                  <div class="col-pro">
+                    <div class="overall">
+                      <div class="o-text">Overall progress</div>
+                      <div class="_16-prp">
+                        <div class="main-progress-bar w-embed">
+                          <div role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="--value:60">
+                            <div class="doted-circle"></div>
+                          </div>
+                        </div>
+                        <div class="text-block-2">All Completed Tasks</div>
+                        <a href="#" class="button-3 w-button">Milestone A</a>
+                      </div>
+                    </div>
+                    <div class="overview">
+                      <div class="v-text">Overview</div>
+                      <div data-w-id="d1174160-a32a-0f84-c30e-5c16d57ae128" class="milestone-div">
+                        <div class="present-div">
+                          <div class="m-text">Milestone A</div>
+                          <div class="percentage-div">
+                            <div class="persen-text">16</div>
+                            <div class="persen-text">%</div>
+                          </div>
+                        </div>
+                        <div class="progress-div-block">
+                          <div style="background-color:rgba(NaN,NaN,NaN,undefined)" class="progress-percent w-embed">
+                            <div class="the-bar" style="width: 16%; background: #FF5533; height: 100%; border-radius: 5px;"></div>
+                          </div>
+                        </div>
+                        <div class="comp-text">Completed</div>
+                      </div>
+                      <div data-w-id="d1174160-a32a-0f84-c30e-5c16d57ae135" class="milestone-div">
+                        <div class="present-div">
+                          <div class="m-text">Milestone A</div>
+                          <div class="percentage-div">
+                            <div class="persen-text">40</div>
+                            <div class="persen-text">%</div>
+                          </div>
+                        </div>
+                        <div class="progress-div-block">
+                          <div style="background-color:rgba(NaN,NaN,NaN,undefined)" class="progress-percent w-embed">
+                            <div class="the-bar" style="width: 40%; background: #FF5533; height: 100%; border-radius: 5px;"></div>
+                          </div>
+                        </div>
+                        <div class="comp-text">Completed</div>
+                      </div>
+                      <div data-w-id="d1174160-a32a-0f84-c30e-5c16d57ae142" class="milestone-div">
+                        <div class="present-div">
+                          <div class="m-text">Milestone A</div>
+                          <div class="percentage-div">
+                            <div class="persen-text">16</div>
+                            <div class="persen-text">%</div>
+                          </div>
+                        </div>
+                        <div class="progress-div-block">
+                          <div style="background-color:rgba(NaN,NaN,NaN,undefined)" class="progress-percent w-embed">
+                            <div class="the-bar" style="width: 16%; background: #FF5533; height: 100%; border-radius: 5px;"></div>
+                          </div>
+                        </div>
+                        <div class="comp-text">Completed</div>
+                      </div>
+                      <div data-w-id="d1174160-a32a-0f84-c30e-5c16d57ae14f" class="milestone-div">
+                        <div class="present-div">
+                          <div class="m-text">Milestone A</div>
+                          <div class="percentage-div">
+                            <div class="persen-text">16</div>
+                            <div class="persen-text">%</div>
+                          </div>
+                        </div>
+                        <div class="progress-div-block">
+                          <div style="background-color:rgba(NaN,NaN,NaN,undefined)" class="progress-percent w-embed">
+                            <div class="the-bar" style="width: 16%; background: #FF5533; height: 100%; border-radius: 5px;"></div>
+                          </div>
+                        </div>
+                        <div class="comp-text">Completed</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="side-bar">
+                  <div class="brief-text">Project Brief</div>
+                  <div class="accordion-a">
+                    <div data-delay="500" data-hover="false" data-w-id="d1174160-a32a-0f84-c30e-5c16d57ae160" class="accordion-b w-dropdown">
+                      <div class="accordion-toggle w-dropdown-toggle">
+                        <div style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0)" class="accordion-icon w-icon-dropdown-toggle"></div>
+                        <div class="question">Project Summary</div>
+                      </div>
+                      <nav style="height:0px" class="dropdown-list w-dropdown-list">
+                        <p class="answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      </nav>
+                    </div>
+                    <div data-delay="500" data-hover="false" data-w-id="d1174160-a32a-0f84-c30e-5c16d57ae168" class="accordion-b w-dropdown">
+                      <div class="accordion-toggle w-dropdown-toggle">
+                        <div style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0)" class="accordion-icon w-icon-dropdown-toggle"></div>
+                        <div class="question">Goals of Project</div>
+                      </div>
+                      <nav style="height:0px" class="dropdown-list w-dropdown-list">
+                        <p class="answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      </nav>
+                    </div>
+                    <div data-delay="500" data-hover="false" data-w-id="d1174160-a32a-0f84-c30e-5c16d57ae170" class="accordion-b w-dropdown">
+                      <div class="accordion-toggle w-dropdown-toggle">
+                        <div style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0)" class="accordion-icon w-icon-dropdown-toggle"></div>
+                        <div class="question">Key Functionality</div>
+                      </div>
+                      <nav style="height:0px" class="dropdown-list w-dropdown-list">
+                        <p class="answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      </nav>
+                    </div>
+                    <div data-delay="500" data-hover="false" data-w-id="d1174160-a32a-0f84-c30e-5c16d57ae178" class="accordion-b w-dropdown">
+                      <div class="accordion-toggle w-dropdown-toggle">
+                        <div style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0)" class="accordion-icon w-icon-dropdown-toggle"></div>
+                        <div class="question">Key Deadlines</div>
+                      </div>
+                      <nav style="height:0px" class="dropdown-list w-dropdown-list">
+                        <p class="answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      </nav>
+                    </div>
+                  </div>
+                  <div class="page-wrapper">
+                    <main class="main-wrapper">
+                      <div class="section-accordion">
+                        <div class="page-padding">
+                          <div class="container-small">
+                            <div class="padding-vertical padding-huge">
+                              <ul role="list" class="accordion_list-wrapper w-list-unstyled">
+                                <li class="accordion_item-wrapper">
+                                  <div data-click="accordion" role="region" data-w-id="d1174160-a32a-0f84-c30e-5c16d57ae188" class="accordion_item">
+                                    <a aria-expanded="false" role="button" href="#" class="accordion_title-wrapper w-inline-block">
+                                      <div class="accordion_title">Project Summary</div>
+                                      <div style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0)" class="accordion_arrow w-embed"><svg width="12" height="7" viewbox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M0.39486 0.294274C0.558947 0.130237 0.781466 0.0380859 1.01348 0.0380859C1.2455 0.0380859 1.46802 0.130237 1.63211 0.294274L5.96336 4.62552L10.2946 0.294274C10.4596 0.134886 10.6807 0.0466904 10.9101 0.0486841C11.1395 0.0506777 11.359 0.142701 11.5212 0.304933C11.6834 0.467165 11.7755 0.686626 11.7774 0.916048C11.7794 1.14547 11.6912 1.3665 11.5319 1.53152L6.58198 6.4814C6.4179 6.64544 6.19538 6.73759 5.96336 6.73759C5.73134 6.73759 5.50882 6.64544 5.34474 6.4814L0.39486 1.53152C0.230823 1.36744 0.138672 1.14492 0.138672 0.912899C0.138672 0.68088 0.230823 0.458361 0.39486 0.294274Z" fill="currentColor"></path>
+                                        </svg></div>
+                                    </a>
+                                    <div aria-hidden="true" style="height:0px" class="accordion_description-wrapper">
+                                      <p class="accordion_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="accordion_item-wrapper">
+                                  <div data-click="accordion" role="region" data-w-id="d1174160-a32a-0f84-c30e-5c16d57ae191" class="accordion_item">
+                                    <a aria-expanded="false" role="button" href="#" class="accordion_title-wrapper w-inline-block">
+                                      <div class="accordion_title">Goals of Project</div>
+                                      <div style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0)" class="accordion_arrow w-embed"><svg width="12" height="7" viewbox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M0.39486 0.294274C0.558947 0.130237 0.781466 0.0380859 1.01348 0.0380859C1.2455 0.0380859 1.46802 0.130237 1.63211 0.294274L5.96336 4.62552L10.2946 0.294274C10.4596 0.134886 10.6807 0.0466904 10.9101 0.0486841C11.1395 0.0506777 11.359 0.142701 11.5212 0.304933C11.6834 0.467165 11.7755 0.686626 11.7774 0.916048C11.7794 1.14547 11.6912 1.3665 11.5319 1.53152L6.58198 6.4814C6.4179 6.64544 6.19538 6.73759 5.96336 6.73759C5.73134 6.73759 5.50882 6.64544 5.34474 6.4814L0.39486 1.53152C0.230823 1.36744 0.138672 1.14492 0.138672 0.912899C0.138672 0.68088 0.230823 0.458361 0.39486 0.294274Z" fill="currentColor"></path>
+                                        </svg></div>
+                                    </a>
+                                    <div aria-hidden="true" style="height:0px" class="accordion_description-wrapper">
+                                      <p class="accordion_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="accordion_item-wrapper">
+                                  <div data-click="accordion" role="region" data-w-id="d1174160-a32a-0f84-c30e-5c16d57ae19a" class="accordion_item">
+                                    <a aria-expanded="false" role="button" href="#" class="accordion_title-wrapper w-inline-block">
+                                      <div class="accordion_title">Key Functionality</div>
+                                      <div style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0)" class="accordion_arrow w-embed"><svg width="12" height="7" viewbox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M0.39486 0.294274C0.558947 0.130237 0.781466 0.0380859 1.01348 0.0380859C1.2455 0.0380859 1.46802 0.130237 1.63211 0.294274L5.96336 4.62552L10.2946 0.294274C10.4596 0.134886 10.6807 0.0466904 10.9101 0.0486841C11.1395 0.0506777 11.359 0.142701 11.5212 0.304933C11.6834 0.467165 11.7755 0.686626 11.7774 0.916048C11.7794 1.14547 11.6912 1.3665 11.5319 1.53152L6.58198 6.4814C6.4179 6.64544 6.19538 6.73759 5.96336 6.73759C5.73134 6.73759 5.50882 6.64544 5.34474 6.4814L0.39486 1.53152C0.230823 1.36744 0.138672 1.14492 0.138672 0.912899C0.138672 0.68088 0.230823 0.458361 0.39486 0.294274Z" fill="currentColor"></path>
+                                        </svg></div>
+                                    </a>
+                                    <div aria-hidden="true" style="height:0px" class="accordion_description-wrapper">
+                                      <p class="accordion_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="accordion_item-wrapper">
+                                  <div data-click="accordion" role="region" data-w-id="d1174160-a32a-0f84-c30e-5c16d57ae1a3" class="accordion_item">
+                                    <a aria-expanded="false" role="button" href="#" class="accordion_title-wrapper w-inline-block">
+                                      <div class="accordion_title">Key Deadlines</div>
+                                      <div style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0)" class="accordion_arrow w-embed"><svg width="12" height="7" viewbox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M0.39486 0.294274C0.558947 0.130237 0.781466 0.0380859 1.01348 0.0380859C1.2455 0.0380859 1.46802 0.130237 1.63211 0.294274L5.96336 4.62552L10.2946 0.294274C10.4596 0.134886 10.6807 0.0466904 10.9101 0.0486841C11.1395 0.0506777 11.359 0.142701 11.5212 0.304933C11.6834 0.467165 11.7755 0.686626 11.7774 0.916048C11.7794 1.14547 11.6912 1.3665 11.5319 1.53152L6.58198 6.4814C6.4179 6.64544 6.19538 6.73759 5.96336 6.73759C5.73134 6.73759 5.50882 6.64544 5.34474 6.4814L0.39486 1.53152C0.230823 1.36744 0.138672 1.14492 0.138672 0.912899C0.138672 0.68088 0.230823 0.458361 0.39486 0.294274Z" fill="currentColor"></path>
+                                        </svg></div>
+                                    </a>
+                                    <div aria-hidden="true" style="height:0px" class="accordion_description-wrapper">
+                                      <p class="accordion_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </main>
+                  </div>
+                  <div class="rafer">
+                    <div class="hr-2"></div>
+                    <div class="rafer-main">Stellant Client Success Manager</div>
+                    <div class="set-div">
+                      <div class="cir-text">AM</div>
+                      <div class="am-div-two">
+                        <div class="fullname">Full Name</div>
+                        <div class="acount">Position</div>
+                        <div class="acount">email@stellant.co</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="team-tracker">
+                <div class="tracker-text">Team Tracker</div>
+                <div class="tracker-scroll">
+                  <div class="title-name">
+                    <div class="w-layout-grid grid-5">
+                      <div class="table-title">First Name</div>
+                      <div class="table-title">Last Name</div>
+                      <div class="table-title">Joined On</div>
+                      <div class="table-title">Email Address</div>
+                      <div class="table-title">Title</div>
+                      <div class="table-title">Completion Rate</div>
+                    </div>
+                  </div>
+                  <div class="info-wrap">
+                    <div class="hg-in"><img loading="lazy" src="../images/AM-3.png" alt="" class="fare-img">
+                      <div class="info-title">First Name</div>
+                    </div>
+                    <div class="info-title">Last Name</div>
+                    <div class="info-title">27/09/2022</div>
+                    <div class="info-title">Email@stellant.co</div>
+                    <div class="info-title-2">This is a long title, Very long title</div>
+                    <div class="rate-div">
+                      <div class="info-title">80%</div>
+                      <a href="#" class="feed-link">Submit feedback</a>
+                    </div>
+                  </div>
+                  <div class="info-wrap">
+                    <div class="hg-in"><img loading="lazy" src="../images/AM-3.png" alt="" class="fare-img">
+                      <div class="info-title">First Name</div>
+                    </div>
+                    <div class="info-title">Last Name</div>
+                    <div class="info-title">27/09/2022</div>
+                    <div class="info-title">Email@stellant.co</div>
+                    <div class="info-title-2">This is a long title, Very long title</div>
+                    <div class="rate-div">
+                      <div class="info-title">10%</div>
+                      <a href="#" class="feed-link">Submit feedback</a>
+                    </div>
+                  </div>
+                  <div class="info-wrap">
+                    <div class="hg-in"><img loading="lazy" src="../images/AM-3.png" alt="" class="fare-img">
+                      <div class="info-title">First Name</div>
+                    </div>
+                    <div class="info-title">Last Name</div>
+                    <div class="info-title">27/09/2022</div>
+                    <div class="info-title">Email@stellant.co</div>
+                    <div class="info-title-2">This is a long title, Very long title</div>
+                    <div class="rate-div">
+                      <div class="info-title">80%</div>
+                      <a href="#" class="feed-link">Submit feedback</a>
+                    </div>
+                  </div>
+                  <div class="info-wrap">
+                    <div class="hg-in"><img loading="lazy" src="../images/AM-3.png" alt="" class="fare-img">
+                      <div class="info-title">First Name</div>
+                    </div>
+                    <div class="info-title">Last Name</div>
+                    <div class="info-title">27/09/2022</div>
+                    <div class="info-title">Email@stellant.co</div>
+                    <div class="info-title-2">This is a long title, Very long title</div>
+                    <div class="rate-div">
+                      <div class="info-title">50%</div>
+                      <a href="#" class="feed-link">Submit feedback</a>
+                    </div>
+                  </div>
+                  <div class="info-wrap">
+                    <div class="hg-in"><img loading="lazy" src="../images/AM-3.png" alt="" class="fare-img">
+                      <div class="info-title">First Name</div>
+                    </div>
+                    <div class="info-title">Last Name</div>
+                    <div class="info-title">27/09/2022</div>
+                    <div class="info-title">Email@stellant.co</div>
+                    <div class="info-title-2">This is a long title, Very long title</div>
+                    <div class="rate-div">
+                      <div class="info-title">30%</div>
+                      <a href="#" class="feed-link">Submit feedback</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="project-btns hide">
+        <a href="#" class="p-btn w-button">Project A</a>
+        <a href="#" class="p-btn w-button">Project B</a>
+        <a href="#" class="plus-btn w-button"></a>
+      </div>
+    </div>
+  </div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=62b394ecfebdb572bde3bec3" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="../js/webflow.js" type="text/javascript"></script>
+  <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+  <!--  [Attributes by Finsweet] CMS Tabs  -->
+  <script async="" src="https://cdn.jsdelivr.net/npm/@finsweet/attributes-cmstabs@1/cmstabs.js"></script>
+</body>
+</html>
